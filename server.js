@@ -1,28 +1,33 @@
-var connect = require('connect');
-var sassMiddleware = require('node-sass-middleware');
-var express = require('express')
+//BLOQUE DE DEPENDECIAS
+const express = require('express');//libreria de js para servidores.
+const path = require('path');//construye rutas de nuestro sistema de archivos
+const nsm = require('node-sass-middleware');//compilador de sass
+const { dirname } = require('path');
+//const express = require('express');//nos ayuda a hacer debug
 
-var srcPath = __dirname + '/public/assets/sass';
-var destPath = __dirname + '/public/assets/css';
 
-var serveStatic = require('serve-static')
-var http = require('http');
-var port = process.env.PORT || 8000;
-var app = connect();
+//BLOQUE DE CONFIGURACIONES
+const app = express();//esto es un nuevo servidor
 
-// Bootstrap
-// app.use(__dirname + '/public/assets/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
-// app.use(__dirname + '/public/assets/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
-// app.use(__dirname + '/public/assets/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
-
-app.use('/assets/css', sassMiddleware({
-    src: srcPath,
-    dest: destPath,
+app.use(nsm({
+    src: path.join(__dirname, 'src'),
+    dest: path.join(__dirname, 'public'),
     debug: true,
-    outputStyle: 'expanded'
+    outputStyle: 'compresed',
+    prefix: '/assets',
+    log: (sev, key, val) => console.log(`${sev} - ${key}: ${val}`)
 }));
-app.use('/',
-    serveStatic('public', {'index': ['index.html']})
-);
-http.createServer(app).listen(port);
-console.log('Server listening on port ' + port);
+app.use('/assets', express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'pug'); //pug es nuestro motor de vistas
+
+//BLOQUE DE ACCIONES
+app.get('/', (req, res) => {
+    res.render('index',
+    {
+        title: 'Landing page practice',
+        message: 'hola jazz'
+    });
+})
+
+//Ejecucion del servidor
+app.listen(3000, () => console.log('Server started'));
