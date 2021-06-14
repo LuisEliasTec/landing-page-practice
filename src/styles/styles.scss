@@ -1,0 +1,34 @@
+@import'../../node_modules/bootstrap/scss/bootstrap.scss';
+
+//importando componentes
+@import'./components/nav.scss';
+@import'./components/carrusel.scss';
+@import'./components/divider.scss';
+@import'./components/menu.scss';
+@import'./components/our_stars.scss';
+@import'./components/about.scss';
+@import'./components/contact.scss';
+@import'./components/footer.scss';
+
+//importando fuentes
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Great+Vibes&display=swap');
+
+//Fuentes y colores
+$main-font:                 'Great Vibes', cursive;
+$text-font:                 'Arima Madurai', cursive;
+$color-background:           #f6f4f5;
+$color-text:                 #161214;
+$color-footer:               #594851;
+$color-gray:                 #323036;
+$color-wine:                 #7B2836;
+
+h1{
+     font-family: $main-font;
+}
+h2{
+    font-family: $text-font;
+}
+body{
+     background-color: $color-background;
+     color: $color-text;
+ }
