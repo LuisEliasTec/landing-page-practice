@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
     res.render('index',
     {
         title: 'Landing page practice',
-        message: 'hola jazz'
+        message: 'This is a practice'
     });
 })
 

@@ -7187,6 +7187,83 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.menu-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.menu-item {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  height: 300px;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s all ease-in-out; }
+  .menu-item:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #7b2836b7;
+    transform-origin: 0 bottom 0;
+    transform: scaleY(0);
+    transition: 0.4s ease-out; }
+  .menu-item:hover .text-item {
+    color: #fff;
+    padding: 0;
+    background: none; }
+  .menu-item:hover:before {
+    transform: scaleY(1); }
+
+.menu-item-cakes,
+.menu-item-macarons,
+.menu-item-coockies,
+.menu-item-cupcakes {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.menu-item-cakes {
+  background-image: url("/assets/images/cakes/cake-menu.jpg"); }
+
+.menu-item-macarons {
+  background-image: url("/assets/images/macarons/macarons-menu.jpg"); }
+
+.menu-item-coockies {
+  background-image: url("/assets/images/coockies/coockies-menu.jpg"); }
+
+.menu-item-cupcakes {
+  background-image: url("/assets/images/cupcakes/cupcakes-menu.jpg"); }
+
+.text-item {
+  background: rgba(255, 255, 255, 0.63);
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.333;
+  transition: 0.4s ease-out; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+  .menu-item {
+    flex-basis: 50%;
+    height: 200px;
+    font-size: 1.5em; } }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 h1 {
   font-family: "Great Vibes", cursive; }
 
