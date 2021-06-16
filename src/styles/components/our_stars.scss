@@ -1,13 +1,3 @@
-.our-stars-container {
-    // display: flex;
-    // flex-flow: row wrap;
-    // justify-content: space-around;
-
-    // .card {
-    //     flex-basis: 20%;
-    // }
-}
-
 .card {
     transition: transform 0.2s;
     &:hover {
@@ -26,7 +16,6 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
     .card {
-        // flex-basis: 20%;
         margin: 20px;
     }
 }
