@@ -1,16 +1,3 @@
-.title-cotainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.border-title {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    // flex-basis: 20%;
-    width: 200px;
-}
-
 .contact-container {
     display: flex;
     justify-content: center;
@@ -23,7 +10,16 @@
 input,
 textarea {
     border: none !important;
-    margin: 10px 0;
+    margin: 20px 0;
+}
+
+.contact-submit-button {
+    background: $color-wine;
+    color: white;
+
+    &:hover {
+        color: rgb(197, 197, 197);
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
