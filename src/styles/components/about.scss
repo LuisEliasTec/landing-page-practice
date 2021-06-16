@@ -1,3 +1,78 @@
+
+:root{
+    --size-font-title: 4em;
+    --size-font-text: 2em;
+    --pad-top-text: 40px; 
+    --margin-height-text: 0;  
+    --margin-width-text: 50px;
+}
+
+/* mini small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    :root{
+        --size-font-title: 3em;
+        --size-font-text: 1.4em;
+        --pad-top-text: 30px; 
+        --margin-height-text: 0;  
+        --margin-width-text: 20px;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 576px) and (max-width: 599px) {
+    :root{
+        --size-font-title: 3.2em;
+        --size-font-text: 1.5em;
+        --pad-top-text: 30px; 
+        --margin-height-text: 0;  
+        --margin-width-text: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    :root{
+        --size-font-title: 3.2em;
+        --size-font-text: 1.6em;
+        --pad-top-text: 30px; 
+        --margin-height-text: 0;  
+        --margin-width-text: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    :root{
+        --size-font-title: 3.5em;
+        --size-font-text: 1.8em;
+        --pad-top-text: 30px; 
+        --margin-height-text: 0;  
+        --margin-width-text: 25px;
+    } 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    :root{
+        --size-font-title: 4em;
+        --size-font-text: 2em;
+        --pad-top-text: 40px; 
+        --margin-height-text: 0;  
+        --margin-width-text: 50px;
+    } 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    :root{
+        --size-font-title: 4em;
+        --size-font-text: 2em;
+        --pad-top-text: 40px; 
+        --margin-height-text: 0;  
+        --margin-width-text: 50px;
+    } 
+}
+
+
 .about{
     position: relative;
     width: 100%;
@@ -30,16 +105,23 @@
             width: 75%;
             max-width: 750px;
             min-width: 350px;
-            height: 50%;
+            height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            font-size: 36px;
-            font-family: $text-font;
+            
 
             h1{
-                font-size: 3.5em;
+                font-size: var(--size-font-title);
+            }
+
+            p{
+            font-size: var(--size-font-text);
+            font-family: $text-font;
+            padding-top: var(--pad-top-text);
+            //padding-bottom: 30px;
+            margin: var(--margin-height-text) var(--margin-width-text);
             }
         }
         
