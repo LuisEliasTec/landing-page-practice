@@ -7332,6 +7332,37 @@ a.text-dark:hover, a.text-dark:focus {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.title-cotainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.border-title {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 200px; }
+
+.contact-container {
+  display: flex;
+  justify-content: center; }
+
+.form-container {
+  flex-basis: 50%; }
+
+input,
+textarea {
+  border: none !important;
+  margin: 5px 0; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .form-container {
+    flex-basis: 80%; } }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 h1 {
   font-family: "Great Vibes", cursive; }
 
