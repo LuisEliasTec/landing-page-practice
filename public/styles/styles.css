@@ -7276,7 +7276,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ffd620; }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 575px) and (max-width: 599px) {
+@media only screen and (max-width: 599px) {
   .menu-item {
     flex-basis: 50%;
     height: 200px;
@@ -7311,6 +7311,26 @@ a.text-dark:hover, a.text-dark:focus {
   .menu-modal-text {
     flex-basis: 60%; } }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.card {
+  transition: transform 0.2s; }
+  .card:hover {
+    transform: scale(1.05); }
+  .card .card-title {
+    text-align: center; }
+
+.our-stars-rating {
+  color: #ffd620;
+  text-align: center; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .card {
+    margin: 20px; } }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 h1 {
   font-family: "Great Vibes", cursive; }
