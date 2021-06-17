@@ -1,8 +1,8 @@
-header {width:100%; align-content: center;}
+header {width:100%; align-content: center; position: absolute; z-index: 9;}
 #btn_menu {display: none;}
 header label {display: none; align-content:center; width: 30px; padding: 10px; }
 header label:hover {cursor:pointer;}
-.container {display: none; width: 100%; align-items: center; justify-content: space-between;}
+.nav-container {display: none; width: 100%; align-items: center; justify-content: space-between;}
 
 .main_menu {margin: 0; width: auto; z-index: 9; }
 .main_menu ul{margin: 0; padding: 0; list-style: none; display:flex; justify-content: center;}
@@ -12,8 +12,8 @@ header label:hover {cursor:pointer;}
 .main_menu ul li a:hover{color: #7B2836}
 
 @media (max-width: 777px) {
-    .container{display:flex;}
-    header {background-color: #F6F4F5;}
+    .nav-container{display:flex;}
+    header {background-color: transparent;}
     header label {display: block;}
     header div {font-family: "Great Vibes", cursive; font-size: 40px;}
     .main_menu {position:absolute; width: 100%; margin-left:-110%; background: #F6F4F5; transition: all 0.5s;}
