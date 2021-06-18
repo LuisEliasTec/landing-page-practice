@@ -1,36 +1,54 @@
-@import'../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-//variables section 
-$main-font:                 'Great Vibes', cursive;
-$text-font:                 'Arima Madurai', cursive;
-$color-background:           #f6f4f5;
-$color-text:                 #161214;
-$color-footer:               #594851;
-$color-gray:                 #323036;
-$color-wine:                 #7B2836;
+//variables section
+$main-font: "Great Vibes", cursive;
+$text-font: "Arima Madurai", cursive;
+$color-background: #f6f4f5;
+$color-text: #161214;
+$color-footer: #594851;
+$color-gray: #323036;
+$color-wine: #7b2836;
 
-// importing components section 
-@import'./components/nav.scss';
-@import'./components/carrusel.scss';
-@import'./components/divider.scss';
-@import'./components/menu.scss';
-@import'./components/our_stars.scss';
-@import'./components/about.scss';
-@import'./components/contact.scss';
-@import'./components/footer.scss';
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Great+Vibes&display=swap');
-
-
+// importing components section
+@import "./components/nav.scss";
+@import "./components/carrusel.scss";
+@import "./components/divider.scss";
+@import "./components/menu.scss";
+@import "./components/our_stars.scss";
+@import "./components/about.scss";
+@import "./components/contact.scss";
+@import "./components/footer.scss";
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Great+Vibes&display=swap");
 
 //global changes section
-h1{
-     font-family: $main-font;
+h1 {
+    font-family: $main-font;
 }
-h2{
+h2 {
     font-family: $text-font;
 }
 
-body{
-     background-color: $color-background;
-     color: $color-text;
- }
+body {
+    background-color: $color-background;
+    color: $color-text;
+    font-family: $text-font;
+}
+
+.divider-main-section-container {
+    padding: 80px 0;
+}
+
+// .menu-main-section-container,
+.our-stars-main-section-container,
+.contact-main-section-container {
+    padding: 60px 0;
+}
+
+.divider-main-section-container,
+.menu-main-section-container,
+.our-stars-main-section-container,
+.contact-main-section-container {
+    h1 {
+        margin-bottom: 20px;
+    }
+}

@@ -7189,7 +7189,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 header {
   width: 100%;
-  align-content: center; }
+  align-content: center;
+  position: absolute;
+  z-index: 9; }
 
 #btn_menu {
   display: none; }
@@ -7203,7 +7205,7 @@ header label {
 header label:hover {
   cursor: pointer; }
 
-.container {
+.nav-container {
   display: none;
   width: 100%;
   align-items: center;
@@ -7242,10 +7244,10 @@ header label:hover {
   color: #7B2836; }
 
 @media (max-width: 777px) {
-  .container {
+  .nav-container {
     display: flex; }
   header {
-    background-color: #F6F4F5; }
+    background-color: transparent; }
   header label {
     display: block; }
   header div {
@@ -7269,17 +7271,68 @@ header label:hover {
   #btn_menu:checked ~ .main_menu {
     margin: 0; } }
 
-p {
-  font-size: 18px;
-  text-align: center;
-  font-family: "Arima Madurai";
-  margin-top: 110px;
-  margin-bottom: 110px; }
+#slider {
+  overflow: hidden; }
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite; }
+
+.slider-main-section-container #slider figure img {
+  width: 20%;
+  height: 100vh;
+  float: left;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
+#carouselControls .carousel-inner .carousel-item img {
+  background-size: cover;
+  background-position: center 200px;
+  background-repeat: no-repeat; }
+
+.divider-main-section-container {
+  background: #594851;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .divider-main-section-container p {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Arima Madurai"; }
+
+.menu-main-section-container {
+  background: #e4e4e4; }
 
 .menu-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  overflow: hidden; }
 
 .menu-item {
   flex-basis: 25%;
@@ -7291,7 +7344,6 @@ p {
   text-decoration: none;
   position: relative;
   cursor: pointer;
-  overflow: hidden;
   transition: 0.5s all ease-in-out; }
   .menu-item:before {
     position: absolute;
@@ -7318,7 +7370,13 @@ p {
 .menu-item-cupcakes {
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease; }
+  .menu-item-cakes:hover,
+  .menu-item-macarons:hover,
+  .menu-item-coockies:hover,
+  .menu-item-cupcakes:hover {
+    transform: scale(1.03); }
 
 .menu-item-cakes {
   background-image: url("/assets/images/cakes/cake-menu.jpg"); }
@@ -7338,8 +7396,6 @@ p {
   border-radius: 5px;
   position: relative;
   font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.333;
   transition: 0.4s ease-out; }
 
 .menu-modal-container {
@@ -7401,12 +7457,17 @@ p {
     flex-basis: 60%; } }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-.card {
+.our-stars-main-section-container .card {
+  overflow: hidden;
   transition: transform 0.2s; }
-  .card:hover {
+  .our-stars-main-section-container .card:hover {
     transform: scale(1.05); }
-  .card .card-title {
+    .our-stars-main-section-container .card:hover .card-img-top {
+      transform: scale(1.04); }
+  .our-stars-main-section-container .card .card-title {
     text-align: center; }
+  .our-stars-main-section-container .card .card-img-top {
+    transition: transform 0.5s ease; }
 
 .our-stars-rating {
   color: #ffd620;
@@ -7415,7 +7476,7 @@ p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
   .card {
-    margin: 20px; } }
+    margin: 20px 0; } }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -7525,23 +7586,22 @@ p {
   display: flex;
   justify-content: center; }
 
-.form-container {
+.contact-form-container {
   flex-basis: 50%; }
-
-input,
-textarea {
-  border: none !important;
-  margin: 20px 0; }
+  .contact-form-container input,
+  .contact-form-container textarea {
+    border: none !important;
+    margin-bottom: 30px 0; }
 
 .contact-submit-button {
-  background: #7B2836;
+  background: #7b2836;
   color: white; }
   .contact-submit-button:hover {
     color: #c5c5c5; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
-  .form-container {
+  .contact-form-container {
     flex-basis: 80%; } }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -7556,4 +7616,18 @@ h2 {
 
 body {
   background-color: #f6f4f5;
-  color: #161214; }
+  color: #161214;
+  font-family: "Arima Madurai", cursive; }
+
+.divider-main-section-container {
+  padding: 80px 0; }
+
+.our-stars-main-section-container,
+.contact-main-section-container {
+  padding: 60px 0; }
+
+.divider-main-section-container h1,
+.menu-main-section-container h1,
+.our-stars-main-section-container h1,
+.contact-main-section-container h1 {
+  margin-bottom: 20px; }
