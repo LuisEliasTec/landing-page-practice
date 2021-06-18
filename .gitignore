@@ -1,2 +1,6 @@
 node_modules
+<<<<<<< HEAD
 #public/styles/*
+=======
+# public/styles/*
+>>>>>>> 1121240236c1369d02668faa0f6475a787a10ec8
