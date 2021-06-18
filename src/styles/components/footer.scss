@@ -1,0 +1,142 @@
+.main-footer{
+    background-color: $color-footer;
+    
+    .container-footer{
+        padding: 50px 150px;
+
+        p{
+            margin: 0;
+            color: $color-background;
+            font-size: 20px;
+        }
+        h3{
+            font-family: $main-font;
+            font-size: 40px;
+            color: $color-background;
+            font-size: 30px;
+            margin: 0px;
+        }
+        
+       .footer-content{
+           display: grid;
+           border: solid 1px $color-background;
+           .location{
+               display: flex;
+               grid-area: location;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               border: solid 1px $color-background;
+               padding: 0px 10px;
+               
+               
+            }
+           .live_chat{
+               display: flex;
+               grid-area: live_chat;
+               flex-direction: column;
+               border: solid 1px $color-background;
+               padding: 10px 60px;
+               p{
+                   display: flex;
+               }
+            }
+           .follow{
+               display: flex;
+               grid-area: follow;
+               border: solid 1px $color-background;
+               padding: 20px 60px;
+               flex-direction: row;
+
+               .icons-foot{
+                   display: flex;
+                   align-items: center;
+                   width: 100%;
+                   justify-content: start;
+                   .face{
+                       padding: 0px 25px 0px 45px;
+                   }
+                   .insta{
+                       padding-right: 25px;
+                   }
+                   img{
+                       display: flex;
+                       width: 20px !important;
+                       height: 20px !important;
+                   }
+               }
+              
+            }
+           .freelance{
+               grid-area: freelance;
+               border: solid 1px $color-background;
+               padding: 10px 0px;
+            }
+        //    grid-template-columns: repeat(3, 1fr);
+        //    grid-template-areas: "location      live_chat   live_chat"
+        //                         "location      follow      follow"
+        //                         "freelance     freelance   freelance";
+       }  
+      
+    } 
+    
+}
+:root{
+   --fol-pad-h: 20px;
+   --fol-pad-w: 60px;
+   --fol-flex-dir: row;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer-content{
+        .follow{
+            padding: 30px 30px;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            h3{
+                padding: 20px;
+            }
+            .insta{
+                padding: 0px 30px;
+            }
+        }
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "follow      live_chat   live_chat"
+                             "location     freelance   freelance"
+                             "location     freelance   freelance";
+        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    :root{
+        --fol-pad-h: 20px;
+        --fol-pad-w: 60px;
+        --fol-flex-dir: row;
+     }
+    .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "location      live_chat   live_chat"
+                             "location      follow      follow"
+                             "freelance     freelance   freelance";
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    :root{
+        --fol-pad-h: 20px;
+        --fol-pad-w: 60px;
+        --fol-flex-dir: row;
+     }
+    .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "location      live_chat   live_chat"
+                             "location      follow      follow"
+                             "freelance     freelance   freelance";
+    }
+}
