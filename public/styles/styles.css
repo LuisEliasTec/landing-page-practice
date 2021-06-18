@@ -7189,13 +7189,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 header {
   width: 100%;
-<<<<<<< HEAD
-  align-content: center; }
-=======
   align-content: center;
   position: absolute;
   z-index: 9; }
->>>>>>> main
 
 #btn_menu {
   display: none; }
@@ -7209,11 +7205,7 @@ header label {
 header label:hover {
   cursor: pointer; }
 
-<<<<<<< HEAD
-.container {
-=======
 .nav-container {
->>>>>>> main
   display: none;
   width: 100%;
   align-items: center;
@@ -7252,17 +7244,10 @@ header label:hover {
   color: #7B2836; }
 
 @media (max-width: 777px) {
-<<<<<<< HEAD
-  .container {
-    display: flex; }
-  header {
-    background-color: #F6F4F5; }
-=======
   .nav-container {
     display: flex; }
   header {
     background-color: transparent; }
->>>>>>> main
   header label {
     display: block; }
   header div {
@@ -7286,8 +7271,6 @@ header label:hover {
   #btn_menu:checked ~ .main_menu {
     margin: 0; } }
 
-<<<<<<< HEAD
-=======
 #slider {
   overflow: hidden; }
 
@@ -7322,7 +7305,6 @@ header label:hover {
   100% {
     left: -400%; } }
 
->>>>>>> main
 p {
   font-size: 18px;
   text-align: center;
@@ -7555,7 +7537,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .about .about-content .container {
+    .about .about-content .about-container-text {
       background-color: rgba(246, 244, 245, 0.7);
       padding: 1.7em 1em;
       border-radius: 0.5em;
@@ -7567,27 +7549,14 @@ p {
       flex-direction: column;
       justify-content: center;
       text-align: center; }
-      .about .about-content .container h1 {
+      .about .about-content .about-container-text h1 {
         font-size: var(--size-font-title); }
-      .about .about-content .container p {
+      .about .about-content .about-container-text p {
         font-size: var(--size-font-text);
         font-family: "Arima Madurai", cursive;
         padding-top: var(--pad-top-text);
         margin: var(--margin-height-text) var(--margin-width-text); }
 
-<<<<<<< HEAD
-.title-cotainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
-
-.border-title {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  width: 200px; }
-
-=======
->>>>>>> main
 .contact-container {
   display: flex;
   justify-content: center; }
@@ -7598,9 +7567,6 @@ p {
 input,
 textarea {
   border: none !important;
-<<<<<<< HEAD
-  margin: 10px 0; }
-=======
   margin: 20px 0; }
 
 .contact-submit-button {
@@ -7608,7 +7574,6 @@ textarea {
   color: white; }
   .contact-submit-button:hover {
     color: #c5c5c5; }
->>>>>>> main
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
@@ -7619,7 +7584,6 @@ textarea {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-<<<<<<< HEAD
 .main-footer {
   background-color: #594851; }
   .main-footer .container-footer {
@@ -7684,11 +7648,119 @@ textarea {
   --fol-pad-w: 60px;
   --fol-flex-dir: row; }
 
+/* mini small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+  :root {
+    --container-pad-h:10px;
+    --container-pad-w:10px; }
+  .container-footer p {
+    font-size: 12px !important; }
+  .container-footer h3 {
+    font-size: 22px !important; }
+  .container-footer .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "follow      live_chat   live_chat" "location     freelance   freelance" "location     freelance   freelance"; }
+    .container-footer .footer-content .follow {
+      padding: 10px 20px !important;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center; }
+      .container-footer .footer-content .follow h3 {
+        padding-bottom: 10px; }
+      .container-footer .footer-content .follow .face {
+        padding: 0px !important; }
+      .container-footer .footer-content .follow .insta {
+        padding: 0px 30px; }
+    .container-footer .footer-content .live_chat {
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px !important; }
+      .container-footer .footer-content .live_chat h3 {
+        padding-bottom: 10px !important; }
+    .container-footer .footer-content .location {
+      padding: 10px 10px !important; }
+    .container-footer .footer-content .freelance {
+      display: flex;
+      align-items: center;
+      padding: 10px 10px !important; } }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 576px) and (max-width: 599px) {
+  :root {
+    --container-pad-h:15px;
+    --container-pad-w:45px; }
+  .container-footer p {
+    font-size: 12px !important; }
+  .container-footer h3 {
+    font-size: 22px !important; }
+  .container-footer .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "follow      live_chat   live_chat" "location     freelance   freelance" "location     freelance   freelance"; }
+    .container-footer .footer-content .follow {
+      padding: 10px 20px !important;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center; }
+      .container-footer .footer-content .follow h3 {
+        padding-bottom: 10px; }
+      .container-footer .footer-content .follow .face {
+        padding: 0px !important; }
+      .container-footer .footer-content .follow .insta {
+        padding: 0px 30px; }
+    .container-footer .footer-content .live_chat {
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px !important; }
+      .container-footer .footer-content .live_chat h3 {
+        padding-bottom: 10px !important; }
+    .container-footer .footer-content .location {
+      padding: 10px 10px !important; }
+    .container-footer .footer-content .freelance {
+      display: flex;
+      align-items: center;
+      padding: 10px 10px !important; } }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  :root {
+    --container-pad-h:20px;
+    --container-pad-w:50px; }
+  .container-footer p {
+    font-size: 12px !important; }
+  .container-footer h3 {
+    font-size: 22px !important; }
+  .container-footer .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "follow      live_chat   live_chat" "location     freelance   freelance" "location     freelance   freelance"; }
+    .container-footer .footer-content .follow {
+      padding: 10px 20px !important;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center; }
+      .container-footer .footer-content .follow h3 {
+        padding-bottom: 10px; }
+      .container-footer .footer-content .follow .face {
+        padding: 0px !important; }
+      .container-footer .footer-content .follow .insta {
+        padding: 0px 30px; }
+    .container-footer .footer-content .live_chat {
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px !important; }
+      .container-footer .footer-content .live_chat h3 {
+        padding-bottom: 10px !important; }
+    .container-footer .footer-content .location {
+      padding: 10px 10px !important; }
+    .container-footer .footer-content .freelance {
+      display: flex;
+      align-items: center;
+      padding: 10px 10px !important; } }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   :root {
     --container-pad-h:25px;
-    --container-pad-w:80px; }
+    --container-pad-w:60px; }
   .footer-content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "follow      live_chat   live_chat" "location     freelance   freelance" "location     freelance   freelance"; }
@@ -7704,10 +7776,16 @@ textarea {
       .footer-content .follow .insta {
         padding: 0px 30px; }
     .footer-content .live_chat {
-      justify-content: center; }
+      justify-content: center;
+      align-items: center;
+      padding: 0px !important; }
       .footer-content .live_chat h3 {
         padding-bottom: 20px !important; }
     .footer-content .location {
+      padding: 10px 10px !important; }
+    .footer-content .freelance {
+      display: flex;
+      align-items: center;
       padding: 10px 10px !important; } }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -7734,8 +7812,6 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; } }
 
-=======
->>>>>>> main
 h1 {
   font-family: "Great Vibes", cursive; }
 
