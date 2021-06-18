@@ -79,6 +79,9 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
+    .divider-main-section-container {
+        padding: 40px 0;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
