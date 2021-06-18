@@ -8,6 +8,12 @@ $color-text: #161214;
 $color-footer: #594851;
 $color-gray: #323036;
 $color-wine: #7b2836;
+$size-font-title: 4em;
+$size-font-text: 1.6em;
+$pad-top-text: 40px;
+$margin-height-text: 0;
+$margin-width-text: 50px;
+$lala: rgba(246, 244, 245, 0.7);
 
 // importing components section
 @import "./components/nav.scss";
@@ -23,7 +29,9 @@ $color-wine: #7b2836;
 //global changes section
 h1 {
     font-family: $main-font;
+    font-size: $size-font-title;
 }
+
 h2 {
     font-family: $text-font;
 }
@@ -51,4 +59,57 @@ body {
     h1 {
         margin-bottom: 20px;
     }
+}
+
+/* Mini small devices (phones, 600px and down) */
+// @media only screen and (min-width: 0px) and (max-width: 575px) {
+//     $size-font-title: 3em;
+//     $size-font-text: 1.4em;
+//     $pad-top-text: 30px;
+//     $margin-height-text: 0;
+//     $margin-width-text: 20px;
+// }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+    $size-font-title: 3.2em;
+    $size-font-text: 1.5em;
+    $pad-top-text: 30px;
+    $margin-height-text: 0;
+    $margin-width-text: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    $size-font-title: 3.2em;
+    $size-font-text: 1.6em;
+    $pad-top-text: 30px;
+    $margin-height-text: 0;
+    $margin-width-text: 20px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    $size-font-title: 3.5em;
+    $size-font-text: 1.8em;
+    $pad-top-text: 30px;
+    $margin-height-text: 0;
+    $margin-width-text: 25px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    $size-font-title: 4em;
+    $size-font-text: 2em;
+    $pad-top-text: 40px;
+    $margin-height-text: 0;
+    $margin-width-text: 50px;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    $size-font-title: 4em;
+    $size-font-text: 1.6em;
+    $pad-top-text: 40px;
+    $margin-height-text: 0;
+    $margin-width-text: 50px;
 }
