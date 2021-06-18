@@ -7616,7 +7616,8 @@ header label:hover {
     .container-footer .footer-content .freelance {
       display: flex;
       align-items: center;
-      padding: 10px 10px !important; } }
+      padding: 10px 10px !important;
+      justify-content: center; } }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 576px) and (max-width: 599px) {
@@ -7744,7 +7745,12 @@ header label:hover {
     --fol-flex-dir: row; }
   .footer-content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; } }
+    grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; }
+    .footer-content .freelance {
+      display: flex;
+      justify-content: center; }
+    .footer-content .location p {
+      text-align: center; } }
 
 h1 {
   font-family: "Great Vibes", cursive;

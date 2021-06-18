@@ -132,6 +132,7 @@
                 display: flex;
                 align-items: center;
                 padding: 10px 10px !important;
+                justify-content: center;
             }
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "follow      live_chat   live_chat"
@@ -323,6 +324,15 @@
         --fol-flex-dir: row;
      }
     .footer-content{
+        .freelance{
+            display: flex;
+            justify-content: center;
+        }
+        .location{
+            p{
+                text-align: center;
+            }
+        }
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "location      live_chat   live_chat"
                              "location      follow      follow"
