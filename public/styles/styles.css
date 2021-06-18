@@ -7192,7 +7192,8 @@ header {
   width: 100%;
   align-content: center;
   position: absolute;
-  z-index: 9; }
+  z-index: 9;
+  background-color: rgba(123, 40, 54, 0.35); }
 
 #btn_menu {
   display: none; }
@@ -7229,36 +7230,38 @@ header label:hover {
   font-family: "Arima Madurai"; }
 
 .main_menu ul li:nth-child(3) {
+  color: #f6f4f5;
   font-family: "Great Vibes", cursive;
   font-size: 40px;
   padding-left: 50px;
   padding-right: 50px; }
 
 .main_menu ul li a {
-  color: #161214;
+  color: #f6f4f5;
   font-size: 20px;
   text-decoration: none;
   display: block;
   padding: 15px 25px; }
 
 .main_menu ul li a:hover {
-  color: #7B2836; }
+  color: #7b2836; }
 
 @media (max-width: 777px) {
   .nav-container {
     display: flex; }
   header {
-    background-color: transparent; }
+    background-color: rgba(123, 40, 54, 0.35); }
   header label {
     display: block; }
   header div {
+    color: #f6f4f5;
     font-family: "Great Vibes", cursive;
     font-size: 40px; }
   .main_menu {
     position: absolute;
     width: 100%;
     margin-left: -110%;
-    background: #F6F4F5;
+    background: #f6f4f5;
     transition: all 0.5s; }
   .main_menu ul {
     flex-direction: column;
@@ -7269,6 +7272,8 @@ header label:hover {
     display: none; }
   .main_menu ul li:nth-child(5) {
     border-bottom: 1px solid #161214; }
+  .main_menu ul li a {
+    color: #161214; }
   #btn_menu:checked ~ .main_menu {
     margin: 0; } }
 
@@ -7279,7 +7284,7 @@ header label:hover {
 
 .divider-main-section-container {
   background: #594851;
-  color: white;
+  color: #f6f4f5;
   display: flex;
   justify-content: center;
   align-items: center; }
