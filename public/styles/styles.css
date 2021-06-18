@@ -7187,11 +7187,13 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* About variables */
 header {
   width: 100%;
   align-content: center;
   position: absolute;
-  z-index: 9; }
+  z-index: 9;
+  background-color: rgba(123, 40, 54, 0.35); }
 
 #btn_menu {
   display: none; }
@@ -7228,36 +7230,38 @@ header label:hover {
   font-family: "Arima Madurai"; }
 
 .main_menu ul li:nth-child(3) {
+  color: #f6f4f5;
   font-family: "Great Vibes", cursive;
   font-size: 40px;
   padding-left: 50px;
   padding-right: 50px; }
 
 .main_menu ul li a {
-  color: #161214;
+  color: #f6f4f5;
   font-size: 20px;
   text-decoration: none;
   display: block;
   padding: 15px 25px; }
 
 .main_menu ul li a:hover {
-  color: #7B2836; }
+  color: #7b2836; }
 
 @media (max-width: 777px) {
   .nav-container {
     display: flex; }
   header {
-    background-color: transparent; }
+    background-color: rgba(123, 40, 54, 0.35); }
   header label {
     display: block; }
   header div {
+    color: #f6f4f5;
     font-family: "Great Vibes", cursive;
     font-size: 40px; }
   .main_menu {
     position: absolute;
     width: 100%;
     margin-left: -110%;
-    background: #F6F4F5;
+    background: #f6f4f5;
     transition: all 0.5s; }
   .main_menu ul {
     flex-direction: column;
@@ -7268,55 +7272,19 @@ header label:hover {
     display: none; }
   .main_menu ul li:nth-child(5) {
     border-bottom: 1px solid #161214; }
+  .main_menu ul li a {
+    color: #161214; }
   #btn_menu:checked ~ .main_menu {
     margin: 0; } }
 
-#slider {
-  overflow: hidden; }
-
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 20s slider infinite; }
-
-.slider-main-section-container #slider figure img {
-  width: 20%;
-  height: 100vh;
-  float: left;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-@keyframes slider {
-  0% {
-    left: 0; }
-  20% {
-    left: 0; }
-  25% {
-    left: -100%; }
-  45% {
-    left: -100%; }
-  50% {
-    left: -200%; }
-  70% {
-    left: -200%; }
-  75% {
-    left: -300%; }
-  95% {
-    left: -300%; }
-  100% {
-    left: -400%; } }
-
 #carouselControls .carousel-inner .carousel-item img {
-  background-size: cover;
-  background-position: center 200px;
-  background-repeat: no-repeat; }
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover; }
 
 .divider-main-section-container {
   background: #594851;
-  color: white;
+  color: #f6f4f5;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -7482,67 +7450,6 @@ header label:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-:root {
-  --size-font-title: 4em;
-  --size-font-text: 2em;
-  --pad-top-text: 40px;
-  --margin-height-text: 0;
-  --margin-width-text: 50px; }
-
-/* mini small devices (phones, 600px and down) */
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  :root {
-    --size-font-title: 3em;
-    --size-font-text: 1.4em;
-    --pad-top-text: 30px;
-    --margin-height-text: 0;
-    --margin-width-text: 20px; } }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 576px) and (max-width: 599px) {
-  :root {
-    --size-font-title: 3.2em;
-    --size-font-text: 1.5em;
-    --pad-top-text: 30px;
-    --margin-height-text: 0;
-    --margin-width-text: 20px; } }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-  :root {
-    --size-font-title: 3.2em;
-    --size-font-text: 1.6em;
-    --pad-top-text: 30px;
-    --margin-height-text: 0;
-    --margin-width-text: 20px; } }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  :root {
-    --size-font-title: 3.5em;
-    --size-font-text: 1.8em;
-    --pad-top-text: 30px;
-    --margin-height-text: 0;
-    --margin-width-text: 25px; } }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  :root {
-    --size-font-title: 4em;
-    --size-font-text: 2em;
-    --pad-top-text: 40px;
-    --margin-height-text: 0;
-    --margin-width-text: 50px; } }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  :root {
-    --size-font-title: 4em;
-    --size-font-text: 2em;
-    --pad-top-text: 40px;
-    --margin-height-text: 0;
-    --margin-width-text: 50px; } }
-
 .about {
   position: relative;
   width: 100%;
@@ -7574,14 +7481,17 @@ header label:hover {
       flex-direction: column;
       justify-content: center;
       text-align: center; }
-      .about .about-content .about-container-text h1 {
-        font-size: var(--size-font-title); }
       .about .about-content .about-container-text p {
-        font-size: var(--size-font-text);
+        font-size: 1.6em;
         font-family: "Arima Madurai", cursive;
-        padding-top: var(--pad-top-text);
-        margin: var(--margin-height-text) var(--margin-width-text); }
+        padding-top: 40px;
+        margin: 0 50px; }
 
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .contact-container {
   display: flex;
   justify-content: center; }
@@ -7837,7 +7747,8 @@ header label:hover {
     grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; } }
 
 h1 {
-  font-family: "Great Vibes", cursive; }
+  font-family: "Great Vibes", cursive;
+  font-size: 4em; }
 
 h2 {
   font-family: "Arima Madurai", cursive; }
@@ -7859,3 +7770,10 @@ body {
 .our-stars-main-section-container h1,
 .contact-main-section-container h1 {
   margin-bottom: 20px; }
+
+/* Mini small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
