@@ -7189,7 +7189,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 header {
   width: 100%;
+<<<<<<< HEAD
   align-content: center; }
+=======
+  align-content: center;
+  position: absolute;
+  z-index: 9; }
+>>>>>>> main
 
 #btn_menu {
   display: none; }
@@ -7203,7 +7209,11 @@ header label {
 header label:hover {
   cursor: pointer; }
 
+<<<<<<< HEAD
 .container {
+=======
+.nav-container {
+>>>>>>> main
   display: none;
   width: 100%;
   align-items: center;
@@ -7242,10 +7252,17 @@ header label:hover {
   color: #7B2836; }
 
 @media (max-width: 777px) {
+<<<<<<< HEAD
   .container {
     display: flex; }
   header {
     background-color: #F6F4F5; }
+=======
+  .nav-container {
+    display: flex; }
+  header {
+    background-color: transparent; }
+>>>>>>> main
   header label {
     display: block; }
   header div {
@@ -7269,6 +7286,43 @@ header label:hover {
   #btn_menu:checked ~ .main_menu {
     margin: 0; } }
 
+<<<<<<< HEAD
+=======
+#slider {
+  overflow: hidden; }
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite; }
+
+#slider figure img {
+  width: 20%;
+  float: left; }
+
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
+>>>>>>> main
 p {
   font-size: 18px;
   text-align: center;
@@ -7521,6 +7575,7 @@ p {
         padding-top: var(--pad-top-text);
         margin: var(--margin-height-text) var(--margin-width-text); }
 
+<<<<<<< HEAD
 .title-cotainer {
   display: flex;
   flex-flow: row wrap;
@@ -7531,6 +7586,8 @@ p {
   border-bottom: 2px solid black;
   width: 200px; }
 
+=======
+>>>>>>> main
 .contact-container {
   display: flex;
   justify-content: center; }
@@ -7541,7 +7598,17 @@ p {
 input,
 textarea {
   border: none !important;
+<<<<<<< HEAD
   margin: 10px 0; }
+=======
+  margin: 20px 0; }
+
+.contact-submit-button {
+  background: #7B2836;
+  color: white; }
+  .contact-submit-button:hover {
+    color: #c5c5c5; }
+>>>>>>> main
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
@@ -7552,6 +7619,7 @@ textarea {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+<<<<<<< HEAD
 .main-footer {
   background-color: #594851; }
   .main-footer .container-footer {
@@ -7666,6 +7734,8 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; } }
 
+=======
+>>>>>>> main
 h1 {
   font-family: "Great Vibes", cursive; }
 
