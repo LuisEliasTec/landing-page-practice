@@ -2,7 +2,7 @@
     background-color: $color-footer;
     
     .container-footer{
-        padding: 50px 150px;
+        padding: var(--container-pad-h) var(--container-pad-w);
 
         p{
             margin: 0;
@@ -82,13 +82,19 @@
     
 }
 :root{
-   --fol-pad-h: 20px;
-   --fol-pad-w: 60px;
-   --fol-flex-dir: row;
+    --container-pad-h:25px;
+    --container-pad-w:300px;
+    --fol-pad-h: 20px;
+    --fol-pad-w: 60px;
+    --fol-flex-dir: row;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    :root{
+        --container-pad-h:25px;
+        --container-pad-w:80px;
+    }
     .footer-content{
         .follow{
             padding: 30px 30px;
@@ -96,11 +102,23 @@
             justify-content: center;
             align-items: center;
             h3{
-                padding: 20px;
+                padding-bottom: 20px;
+            }
+            .face{
+                padding: 0px !important;
             }
             .insta{
                 padding: 0px 30px;
             }
+        }
+        .live_chat{
+            justify-content: center;
+            h3{
+                padding-bottom: 20px !important;
+            }
+        }
+        .location{
+            padding: 10px 10px !important;
         }
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "follow      live_chat   live_chat"
@@ -113,6 +131,8 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     :root{
+        --container-pad-h:25px;
+        --container-pad-w:150px;
         --fol-pad-h: 20px;
         --fol-pad-w: 60px;
         --fol-flex-dir: row;
@@ -129,6 +149,8 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     :root{
+        --container-pad-h:25px;
+        --container-pad-w:300px;
         --fol-pad-h: 20px;
         --fol-pad-w: 60px;
         --fol-flex-dir: row;
