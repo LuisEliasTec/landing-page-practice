@@ -2,9 +2,6 @@
 const express = require('express');//libreria de js para servidores.
 const path = require('path');//construye rutas de nuestro sistema de archivos
 const nsm = require('node-sass-middleware');//compilador de sass
-const { dirname } = require('path');
-//const express = require('express');//nos ayuda a hacer debug
-
 
 //BLOQUE DE CONFIGURACIONES
 const app = express();//esto es un nuevo servidor
