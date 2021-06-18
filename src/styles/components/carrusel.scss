@@ -1,15 +1,68 @@
-#slider {overflow: hidden;}
-#slider figure {position: relative; width: 500%; margin: 0; left: 0; animation: 20s slider infinite;}
-#slider figure img {width: 20%; float: left;}
+// #slider {
+// 	overflow: hidden;
+// }
 
-@keyframes slider {
-	0% {left: 0;}
-	20% {left: 0;}
-	25% {left: -100%;}
-	45% {left: -100%;}
-	50% {left: -200%;}
-	70% {left: -200%;}
-	75% {left: -300%;}
-	95% {left: -300%;}
-	100% {left: -400%;}
+// #slider figure {
+// 	position: relative;
+// 	width: 500%;
+// 	margin: 0;
+// 	left: 0;
+// 	animation: 20s slider infinite;
+// }
+
+// // #slider figure img {
+// // 	width: 20%;
+// // 	float: left;
+// // }
+
+// .slider-main-section-container {
+// 	#slider figure img {
+// 		width: 20%;
+// 		height: 100vh;
+// 		float: left;
+// 		background: {
+// 			position: center center;
+// 			size: cover;
+// 			repeat: no-repeat;
+// 		}
+// 	}
+// }
+
+// @keyframes slider {
+// 	0% {
+// 		left: 0;
+// 	}
+// 	20% {
+// 		left: 0;
+// 	}
+// 	25% {
+// 		left: -100%;
+// 	}
+// 	45% {
+// 		left: -100%;
+// 	}
+// 	50% {
+// 		left: -200%;
+// 	}
+// 	70% {
+// 		left: -200%;
+// 	}
+// 	75% {
+// 		left: -300%;
+// 	}
+// 	95% {
+// 		left: -300%;
+// 	}
+// 	100% {
+// 		left: -400%;
+// 	}
+// }
+
+#carouselControls .carousel-inner .carousel-item img {
+	background: {
+		// size: cover;
+		position: center center;
+		repeat: no-repeat;
+	};
+	object-fit: cover;
 }

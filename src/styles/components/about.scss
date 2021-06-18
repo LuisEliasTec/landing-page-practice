@@ -1,84 +1,87 @@
+// :root {
+//     --size-font-title: 4em;
+//     --size-font-text: 1.6em;
+//     --pad-top-text: 40px;
+//     --margin-height-text: 0;
+//     --margin-width-text: 50px;
+// }
 
-:root{
-    --size-font-title: 4em;
-    --size-font-text: 2em;
-    --pad-top-text: 40px; 
-    --margin-height-text: 0;  
-    --margin-width-text: 50px;
-}
+// /* mini small devices (phones, 600px and down) */
+// @media only screen and (min-width: 0px) and (max-width: 575px) {
+//     :root {
+//         --size-font-title: 3em;
+//         --size-font-text: 1.4em;
+//         --pad-top-text: 30px;
+//         --margin-height-text: 0;
+//         --margin-width-text: 20px;
+//     }
+// }
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (min-width: 576px) and (max-width: 599px) {
+//     :root {
+//         --size-font-title: 3.2em;
+//         --size-font-text: 1.5em;
+//         --pad-top-text: 30px;
+//         --margin-height-text: 0;
+//         --margin-width-text: 20px;
+//     }
+// }
 
-/* mini small devices (phones, 600px and down) */
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-    :root{
-        --size-font-title: 3em;
-        --size-font-text: 1.4em;
-        --pad-top-text: 30px; 
-        --margin-height-text: 0;  
-        --margin-width-text: 20px;
-    }
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 576px) and (max-width: 599px) {
-    :root{
-        --size-font-title: 3.2em;
-        --size-font-text: 1.5em;
-        --pad-top-text: 30px; 
-        --margin-height-text: 0;  
-        --margin-width-text: 20px;
-    }
-}
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) and (max-width: 767px) {
+//     :root {
+//         --size-font-title: 3.2em;
+//         --size-font-text: 1.6em;
+//         --pad-top-text: 30px;
+//         --margin-height-text: 0;
+//         --margin-width-text: 20px;
+//     }
+// }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-    :root{
-        --size-font-title: 3.2em;
-        --size-font-text: 1.6em;
-        --pad-top-text: 30px; 
-        --margin-height-text: 0;  
-        --margin-width-text: 20px;
-    }
-}
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+//     :root {
+//         --size-font-title: 3.5em;
+//         --size-font-text: 1.8em;
+//         --pad-top-text: 30px;
+//         --margin-height-text: 0;
+//         --margin-width-text: 25px;
+//     }
+// }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    :root{
-        --size-font-title: 3.5em;
-        --size-font-text: 1.8em;
-        --pad-top-text: 30px; 
-        --margin-height-text: 0;  
-        --margin-width-text: 25px;
-    } 
-}
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) and (max-width: 1199px) {
+//     :root {
+//         --size-font-title: 4em;
+//         --size-font-text: 2em;
+//         --pad-top-text: 40px;
+//         --margin-height-text: 0;
+//         --margin-width-text: 50px;
+//     }
+// }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    :root{
-        --size-font-title: 4em;
-        --size-font-text: 2em;
-        --pad-top-text: 40px; 
-        --margin-height-text: 0;  
-        --margin-width-text: 50px;
-    } 
-}
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+//     :root {
+//         --size-font-title: 4em;
+//         --size-font-text: 1.6em;
+//         --pad-top-text: 40px;
+//         --margin-height-text: 0;
+//         --margin-width-text: 50px;
+//     }
+// }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    :root{
-        --size-font-title: 4em;
-        --size-font-text: 2em;
-        --pad-top-text: 40px; 
-        --margin-height-text: 0;  
-        --margin-width-text: 50px;
-    } 
-}
+// $size-font-text: 1.6em;
+// $pad-top-text: 40px;
+// $margin-height-text: 0;
+// $margin-width-text: 50px;
 
-
-.about{
+.about {
     position: relative;
     width: 100%;
     height: 100vh;
 
-    img{
+    img {
         //transform: rotate(90deg);
         height: 100%;
         width: 100%;
@@ -87,8 +90,7 @@
         object-fit: cover;
     }
 
-   
-    .about-content{
+    .about-content {
         position: absolute;
         top: 0;
         left: 0;
@@ -98,8 +100,8 @@
         justify-content: center;
         align-items: center;
 
-        .about-container-text{
-            background-color: rgba(246,244,245,0.7);
+        .about-container-text {
+            background-color: rgba(246, 244, 245, 0.7);
             padding: 1.7em 1em;
             border-radius: 0.5em;
             width: 75%;
@@ -110,22 +112,59 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            
 
-            h1{
-                font-size: var(--size-font-title);
-            }
-
-            p{
-            font-size: var(--size-font-text);
-            font-family: $text-font;
-            padding-top: var(--pad-top-text);
-            //padding-bottom: 30px;
-            margin: var(--margin-height-text) var(--margin-width-text);
+            p {
+                font-size: $size-font-text;
+                font-family: $text-font;
+                padding-top: $pad-top-text;
+                //padding-bottom: 30px;
+                margin: $margin-height-text $margin-width-text;
             }
         }
-        
     }
+}
 
-    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+    $size-font-title: 3.2em;
+    $size-font-text: 1.5em;
+    $pad-top-text: 30px;
+    $margin-height-text: 0;
+    $margin-width-text: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    $size-font-title: 3.2em;
+    $size-font-text: 1.6em;
+    $pad-top-text: 30px;
+    $margin-height-text: 0;
+    $margin-width-text: 20px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    $size-font-title: 3.5em;
+    $size-font-text: 1.8em;
+    $pad-top-text: 30px;
+    $margin-height-text: 0;
+    $margin-width-text: 25px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    $size-font-title: 4em;
+    $size-font-text: 2em;
+    $pad-top-text: 40px;
+    $margin-height-text: 0;
+    $margin-width-text: 50px;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    $size-font-title: 4em;
+    $size-font-text: 1.6em;
+    $pad-top-text: 40px;
+    $margin-height-text: 0;
+    $margin-width-text: 50px;
 }
