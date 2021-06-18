@@ -7250,7 +7250,8 @@ header label:hover {
   .nav-container {
     display: flex; }
   header {
-    background-color: rgba(123, 40, 54, 0.35); }
+    background-color: rgba(123, 40, 54, 0.35);
+    position: relative; }
   header label {
     display: block; }
   header div {
@@ -7289,7 +7290,7 @@ header label:hover {
   justify-content: center;
   align-items: center; }
   .divider-main-section-container p {
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
     font-family: "Arima Madurai"; }
 
@@ -7771,8 +7772,16 @@ body {
 .contact-main-section-container h1 {
   margin-bottom: 20px; }
 
+.tab-content h1 {
+  font-size: 2.4rem;
+  padding-top: 20px; }
+
 /* Mini small devices (phones, 600px and down) */
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .divider-main-section-container {
+    padding: 40px 0; } }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
