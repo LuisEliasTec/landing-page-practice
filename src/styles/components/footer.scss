@@ -50,9 +50,7 @@
 
                .icons-foot{
                    display: flex;
-                   align-items: center;
-                   width: 100%;
-                   justify-content: start;
+                   
                    .face{
                        padding: 0px 25px 0px 45px;
                    }
@@ -92,7 +90,7 @@
 @media only screen and (max-width: 575px) {
     :root{
         --container-pad-h:10px;
-        --container-pad-w:10px;
+        --container-pad-w:30px;
     }
     .container-footer{
         p{
@@ -121,17 +119,27 @@
                 justify-content: center;
                 align-items: center;
                 padding: 10px 10px !important;
+                p{
+                    text-align: center !important;
+                }
                 h3{
                     padding-bottom: 10px !important;
                 }
             }
             .location{
                 padding: 10px 10px !important;
+                p{
+                    text-align: center !important;
+                }
             }
             .freelance{
                 display: flex;
                 align-items: center;
                 padding: 10px 10px !important;
+                justify-content: center;
+                p{
+                    text-align: center !important;
+                }
             }
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "follow      live_chat   live_chat"
@@ -180,11 +188,17 @@
             }
             .location{
                 padding: 10px 10px !important;
+                p{
+                    text-align: center !important;
+                }
             }
             .freelance{
                 display: flex;
                 align-items: center;
                 padding: 10px 10px !important;
+                p{
+                    text-align: center !important;
+                }
             }
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "follow      live_chat   live_chat"
@@ -214,6 +228,9 @@
                 flex-direction: column !important;
                 justify-content: center;
                 align-items: center;
+                .icons-foot{
+                    display: flex;
+                }
                 h3{
                     padding-bottom: 10px;
                 }
@@ -234,11 +251,17 @@
             }
             .location{
                 padding: 10px 10px !important;
+                p{
+                    text-align: center !important;
+                }
             }
             .freelance{
                 display: flex;
                 align-items: center;
                 padding: 10px 10px !important;
+                p{
+                    text-align: center !important;
+                }
             }
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "follow      live_chat   live_chat"
@@ -281,11 +304,17 @@
         }
         .location{
             padding: 10px 10px !important;
+            p{
+                text-align: center !important;
+            }
         }
         .freelance{
             display: flex;
             align-items: center;
             padding: 10px 10px !important;
+            p{
+                text-align: center !important;
+            }
         }
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "follow      live_chat   live_chat"
@@ -305,6 +334,26 @@
         --fol-flex-dir: row;
      }
     .footer-content{
+        .follow{
+            .icons-foot{
+                align-items: center;
+                width: 100%;
+                justify-content: start;
+            }
+        }
+        .live_chat{
+            padding: 10px 30px 10px 60px !important;
+        }
+        .freelance{
+            padding: 10px 10px !important;
+            p{
+                text-align: center !important;
+            }
+        }
+        .location{
+                text-align: center;
+            
+        }
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "location      live_chat   live_chat"
                              "location      follow      follow"
@@ -323,6 +372,27 @@
         --fol-flex-dir: row;
      }
     .footer-content{
+        .follow{
+            .icons-foot{
+                align-items: center;
+                width: 100%;
+                justify-content: start;
+            }
+        }
+        .live_chat{
+            padding: 10px 30px 10px 60px !important;
+        }
+        .freelance{
+            padding: 10px 10px !important;
+            p{
+                text-align: center;
+            }
+        }
+        .location{
+            p{
+                text-align: center;
+            }
+        }
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "location      live_chat   live_chat"
                              "location      follow      follow"

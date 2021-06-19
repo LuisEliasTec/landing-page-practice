@@ -7250,7 +7250,8 @@ header label:hover {
   .nav-container {
     display: flex; }
   header {
-    background-color: rgba(123, 40, 54, 0.35); }
+    background-color: rgba(123, 40, 54, 0.35);
+    position: relative; }
   header label {
     display: block; }
   header div {
@@ -7289,7 +7290,7 @@ header label:hover {
   justify-content: center;
   align-items: center; }
   .divider-main-section-container p {
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
     font-family: "Arima Madurai"; }
 
@@ -7451,19 +7452,10 @@ header label:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .about {
-  position: relative;
-  width: 100%;
-  height: 100vh; }
-  .about img {
-    height: 100%;
-    width: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
-    object-fit: cover; }
+  background-image: url("/assets/images/about/about.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; }
   .about .about-content {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -7471,27 +7463,93 @@ header label:hover {
     align-items: center; }
     .about .about-content .about-container-text {
       background-color: rgba(246, 244, 245, 0.7);
-      padding: 1.7em 1em;
       border-radius: 0.5em;
-      width: 75%;
+      width: auto;
       max-width: 750px;
-      min-width: 350px;
-      height: 70%;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center; }
+
+/* mini small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+  .about {
+    height: 500px; }
+    .about .about-content {
+      padding: 0px 40px; }
+      .about .about-content .about-container-text {
+        padding: 20px 12px; }
+        .about .about-content .about-container-text h1 {
+          font-size: 3em; }
+        .about .about-content .about-container-text p {
+          font-size: 1em;
+          font-family: "Arima Madurai", cursive;
+          padding-top: 10px; } }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 576px) and (max-width: 599px) {
+  .about {
+    height: 600px; }
+    .about .about-content {
+      padding: 0px 100px; }
+      .about .about-content .about-container-text {
+        padding: 50px 40px; }
+        .about .about-content .about-container-text h1 {
+          font-size: 3.4em; }
+        .about .about-content .about-container-text p {
+          font-size: 1.3em;
+          font-family: "Arima Madurai", cursive;
+          padding-top: 30px; } }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .about {
+    height: 650px; }
+    .about .about-content {
+      padding: 0px 100px; }
+      .about .about-content .about-container-text {
+        padding: 50px 40px; }
+        .about .about-content .about-container-text p {
+          font-size: 1.6em;
+          font-family: "Arima Madurai", cursive;
+          padding-top: 30px; } }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about {
+    height: 650px; }
+    .about .about-content {
+      padding: 0px 100px; }
+      .about .about-content .about-container-text {
+        padding: 50px 40px; }
+        .about .about-content .about-container-text p {
+          font-size: 1.6em;
+          font-family: "Arima Madurai", cursive;
+          padding-top: 30px; } }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about {
+    height: 700px; }
+    .about .about-content .about-container-text {
+      padding: 100px 60px; }
       .about .about-content .about-container-text p {
         font-size: 1.6em;
         font-family: "Arima Madurai", cursive;
-        padding-top: 40px;
-        margin: 0 50px; }
+        padding-top: 30px; } }
 
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .about {
+    height: 700px; }
+    .about .about-content .about-container-text {
+      padding: 100px 60px; }
+      .about .about-content .about-container-text p {
+        font-size: 1.6em;
+        font-family: "Arima Madurai", cursive;
+        padding-top: 30px; } }
+
 .contact-container {
   display: flex;
   justify-content: center; }
@@ -7558,10 +7616,7 @@ header label:hover {
         padding: 20px 60px;
         flex-direction: row; }
         .main-footer .container-footer .footer-content .follow .icons-foot {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          justify-content: start; }
+          display: flex; }
           .main-footer .container-footer .footer-content .follow .icons-foot .face {
             padding: 0px 25px 0px 45px; }
           .main-footer .container-footer .footer-content .follow .icons-foot .insta {
@@ -7586,7 +7641,7 @@ header label:hover {
 @media only screen and (max-width: 575px) {
   :root {
     --container-pad-h:10px;
-    --container-pad-w:10px; }
+    --container-pad-w:30px; }
   .container-footer p {
     font-size: 12px !important; }
   .container-footer h3 {
@@ -7609,14 +7664,21 @@ header label:hover {
       justify-content: center;
       align-items: center;
       padding: 10px 10px !important; }
+      .container-footer .footer-content .live_chat p {
+        text-align: center !important; }
       .container-footer .footer-content .live_chat h3 {
         padding-bottom: 10px !important; }
     .container-footer .footer-content .location {
       padding: 10px 10px !important; }
+      .container-footer .footer-content .location p {
+        text-align: center !important; }
     .container-footer .footer-content .freelance {
       display: flex;
       align-items: center;
-      padding: 10px 10px !important; } }
+      padding: 10px 10px !important;
+      justify-content: center; }
+      .container-footer .footer-content .freelance p {
+        text-align: center !important; } }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 576px) and (max-width: 599px) {
@@ -7649,10 +7711,14 @@ header label:hover {
         padding-bottom: 10px !important; }
     .container-footer .footer-content .location {
       padding: 10px 10px !important; }
+      .container-footer .footer-content .location p {
+        text-align: center !important; }
     .container-footer .footer-content .freelance {
       display: flex;
       align-items: center;
-      padding: 10px 10px !important; } }
+      padding: 10px 10px !important; }
+      .container-footer .footer-content .freelance p {
+        text-align: center !important; } }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -7671,6 +7737,8 @@ header label:hover {
       flex-direction: column !important;
       justify-content: center;
       align-items: center; }
+      .container-footer .footer-content .follow .icons-foot {
+        display: flex; }
       .container-footer .footer-content .follow h3 {
         padding-bottom: 10px; }
       .container-footer .footer-content .follow .face {
@@ -7685,10 +7753,14 @@ header label:hover {
         padding-bottom: 10px !important; }
     .container-footer .footer-content .location {
       padding: 10px 10px !important; }
+      .container-footer .footer-content .location p {
+        text-align: center !important; }
     .container-footer .footer-content .freelance {
       display: flex;
       align-items: center;
-      padding: 10px 10px !important; } }
+      padding: 10px 10px !important; }
+      .container-footer .footer-content .freelance p {
+        text-align: center !important; } }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7717,10 +7789,14 @@ header label:hover {
         padding-bottom: 20px !important; }
     .footer-content .location {
       padding: 10px 10px !important; }
+      .footer-content .location p {
+        text-align: center !important; }
     .footer-content .freelance {
       display: flex;
       align-items: center;
-      padding: 10px 10px !important; } }
+      padding: 10px 10px !important; }
+      .footer-content .freelance p {
+        text-align: center !important; } }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -7732,7 +7808,19 @@ header label:hover {
     --fol-flex-dir: row; }
   .footer-content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; } }
+    grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; }
+    .footer-content .follow .icons-foot {
+      align-items: center;
+      width: 100%;
+      justify-content: start; }
+    .footer-content .live_chat {
+      padding: 10px 30px 10px 60px !important; }
+    .footer-content .freelance {
+      padding: 10px 10px !important; }
+      .footer-content .freelance p {
+        text-align: center !important; }
+    .footer-content .location {
+      text-align: center; } }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -7744,7 +7832,19 @@ header label:hover {
     --fol-flex-dir: row; }
   .footer-content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; } }
+    grid-template-areas: "location      live_chat   live_chat" "location      follow      follow" "freelance     freelance   freelance"; }
+    .footer-content .follow .icons-foot {
+      align-items: center;
+      width: 100%;
+      justify-content: start; }
+    .footer-content .live_chat {
+      padding: 10px 30px 10px 60px !important; }
+    .footer-content .freelance {
+      padding: 10px 10px !important; }
+      .footer-content .freelance p {
+        text-align: center; }
+    .footer-content .location p {
+      text-align: center; } }
 
 h1 {
   font-family: "Great Vibes", cursive;
@@ -7771,8 +7871,16 @@ body {
 .contact-main-section-container h1 {
   margin-bottom: 20px; }
 
+.tab-content h1 {
+  font-size: 2.4rem;
+  padding-top: 20px; }
+
 /* Mini small devices (phones, 600px and down) */
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .divider-main-section-container {
+    padding: 40px 0; } }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
